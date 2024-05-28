@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0%;
+            font-size: 100%;
+            font-style: inherit;
+        }
+       input{
+        margin: 1em;
+        box-sizing: border-box;
+        
+       } 
+       fieldset{
+        box-sizing: border-box;
+        background-color: azure;
+        padding: .5em;
+        margin:1;
+       }
+    </style>
+</head>
+<body>
+    <h2>Food Order</h2>
+    <hr><br><br>
+   <fieldset>
+    <fieldset>
+        <legend>Order Option</legend>
+    <nav class="div-container">
+        <div class="order-list">
+            <label for="select">Please Select Order:</label> <select name="menu-items" id="menu">
+                <optgroup name="Rice Category">Rice
+                    <option value="Select">Select Order</option>
+                    <option value="Rice">Coconut Rice</option>
+                    <option value="Rice and Stew"></option>
+                </optgroup>
+                <optgroup name="Rice Category">Rice
+                    <option value="Select">Select Order</option>
+                    <option value="Rice">Coconut Rice</option>
+                    <option value="Rice and Stew">Yam and Plantain frittata</option>
+                </optgroup>
+            </select><br>
+            <label for="quantity">Quantity: <input type="number" class="quantity"></label><br>
+            <label for="instruction">Comment: <textarea name="instruction" id=""></textarea></label>
+            
+        </div>
+    </nav>
+    </fieldset><br><br>
+    <fieldset>
+        <legend>Delivery/Picked up Information</legend>
+        <label for="Delivery-nat">Delivery Option: </label><br>
+        <label for="Home-d">Home Delivery</label><input type="radio" name="Delivery-nat" value="home-d"><br>
+        <label for="Self-pick">Self Picked Up</label><input type="radio" name="Delivery-nat" value="Self-pick"><br>
+       <label for="address">Enter Delivery Address</label> <textarea name="address" id=""></textarea>
+    </fieldset>
+    <br>
+    <button name="order" id="order-but">Submit Order</button>
+</fieldset>
+</body>
+</html>

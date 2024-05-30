@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roysha</title>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            justify-content: flex-end;
+
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            background: url("https://images.unsplash.com/photo-1541558869434-2840d308329a?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
+        }
+
+        header {
+            background-color: #fff;
+            position: relative;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 0 0px;
+        }
+
+        /* nav style */
+        .navbar {
+            display: flex;
+            padding: 8px 0;
+            align-items: center;
+            max-width: 1250px;
+            margin: 0 auto;
+            justify-content: center;
+            gap: 40em;
+        }
+
+        .navbar .links a {
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            font-size: 1rem;
+            font-weight: 50;
+            text-decoration: none;
+        }
+
+        .navbar .login-btn {
+            border: none;
+            outline: none;
+            background: blue;
+            color: white;
+            font-size: .7rem;
+            font-weight: 700;
+            padding: 6px 15px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.15s ease;
+        }
+
+        .main-container {
+            display: flex;
+            gap: 10em;
+            align-items: center;
+            padding: 5rem 5em;
+
+
+        }
+
+        .right-container {
+            display: flex;
+            flex: 1;
+            justify-content: right;
+            align-items: center;
+        }
+
+        .left-container {
+            flex: 2;
+        }
+
+        .in-btn {
+            color: white;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 15px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            text-align: center;
+            background-color: transparent;
+            border: 1px solid white;
+        }
+
+        .deliv-form {
+            width: 100%;
+            height: 23em;
+            border: none;
+            border-radius: .3em;
+            outline: none;
+            cursor: pointer;
+            display: inline-block;
+            margin: 2em;
+            padding: 20px;
+            background-color: white;
+            /* opacity: ; */
+            }
+        .left-right{
+            display: flex;
+            align-items: center;
+        }
+        .right{
+            padding-top: 15px;
+            flex: 2;
+        }
+        .left{
+            flex: 1;
+        }
+        input{
+            width: em;
+            height: 25px;
+
+        }
+        #currency{
+            width: fit-content;
+        }
+        select {
+            margin: .5em;
+            width: 100%;
+            height: 30px;
+            padding: .3em;
+            display: inline-block;
+            justify-content: first baseline;
+        }
+
+        h2 {
+            border-radius: .2em;
+            font-size: 18px;
+            padding: .3em;
+        }
+
+        ul,
+        li {
+            display: inline-block;
+            padding: 5px;
+        }
+
+        p {
+            color: #fff;
+            font-size: small;
+            font-weight: 500;
+        }
+
+        .pl {
+            font-size: small;
+            font-weight: 500;
+            text-decoration: none;
+            color: blue;
+        }
+        .pa{
+            color: black;
+        }
+        .continue {
+            color: white;
+            padding: .8em;
+            background-color: rgb(1, 64, 236);
+            font-size: 1rem;
+            font-weight: 500;
+            border: 0;
+            border-radius: 3px;
+            font-size: small;
+            width: 100%;
+            margin: 25px 0;
+
+        }
+
+
+        h1 {
+            color: #fff;
+        }
+
+        .div-blender {
+            height: 600px;
+            background-color: black;
+            opacity: .5;
+        }
+        .root{
+            padding: .5em;
+            opacity: 8;
+            background-color: blue;
+            background-blend-mode: hard-light;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <span>
+                <h2>Roysha</h2>
+            </span>
+            </a>
+            <!-- <a href="#" class="m"><h2>Roysha</h2></a> -->
+            <ul class="links" style="list-style-type: none;">
+                <li><a href="javascript.void(0)" class="home">Home</a></li>
+                <li><a href="#" class="sendmoney">Send Money</a></li>
+                <li><a href="#" class="receive">Recieve Money </a></li>
+                <li><a href="#" class="page">Page</a></li>
+                <li><a href="#" class="home">About</a></li>
+                <li><a href="#" class="home">Blog</a></li>
+                <li><a href="#" class="home">Contact</a></li>
+                <li><button class="login-btn">LogIn</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="root"></div>
+    <!-- <main> -->
+    <div class="main-container">
+        <div class="left-container">
+            <p>Sample and Easy Way</p>
+            <h1>Transper Money Across </h1>
+            <h1>World in Real Time </h1>
+            <h1>with no Charges</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas, totam vero reiciendis, voluptas
+                magni veritatis dolores sequi, neque eos pariatur in ex cupiditate obcaecati error? Nisi voluptatem
+                quidem in!</p><br>
+            <button class="in-btn"> Watch Video</button>
+        </div>
+        <div class="right-container">
+            <form action="#" class="deliv-form">
+                <h2>Send Money</h2>
+                <div class="left-right">
+                <div class="left">
+                <label for="send-amount">Send Amount: <input type="number" class="send-amount"></div>
+                   <div class="right">
+                    <select name="currency" id="currency">
+                        <option value="ngn">NGN</option>
+                        <option value="usd">USD</option>
+                        <option value="eu">EU</option>
+                    </select></button></label></div></div>
+                
+                <label for="recieve-country">Recieve Country: </label>
+                <select name="country" id="country">
+                    <option value="nigeria">Nigeria</option>
+                    <option value="canade">Canada</option>
+                    <option value="america">America</option>
+                    <option value="syprus">Syprus</option>
+                </select><br>
+                <label for="delivery">Delivery Type:</label><br>
+                <select name="delivery" id="delivery">
+                    <option value="shipping">shipping Cago</option>
+                    <option value="air">Air Cago</option>
+                </select><br>
+                <button name="continue" class="continue">Continue Transition &nbsp;&nbsp; →</button><br>
+                <p class="pa">By clicking continue, I am agree with <a class="pl" href="">Term & Policy</a></p>
+            </form>
+
+        </div>
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>

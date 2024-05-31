@@ -27,12 +27,13 @@
         }
         
         #h2{
+            padding-left: 2.5em;
             color: orangered;
             padding-top: 15px;
         }
         .navbar{
             display: flex;
-            gap: 22em;
+            gap: 15em;
             justify-content: center;
         }
         .nav-ba {
@@ -59,6 +60,11 @@
             font-weight: 600;
         }
        
+        .search::placeholder{
+            opacity: .8;
+            color: white;
+        }
+       
         .search {
             border: none;
             background-color: transparent;
@@ -67,13 +73,14 @@
             border-radius: 3px;
             cursor: pointer;
             transition: 0.15s ease;
+            width: 10em;
         }
 
         .main-container {
             display: flex;
-            gap: 10em;
+            gap: 9em;
             align-items: center;
-            padding: 15rem 5em;
+            padding: 13rem 5em;
 
 
         }
@@ -88,76 +95,73 @@
         .left-container {
             flex: 2;
         }
-
-        .in-btn {
+        #button-n{
             color: white;
             font-size: 1rem;
             font-weight: 700;
-            padding: 15px 20px;
-            border-radius: 50px;
+            padding: 4px 40%;
+            border-radius: 5px;
+            text-align: center;
+            background-color: orangered;
+            border: 1px solid orangered;
+        }
+        .in-btn{
+            color: white;
+            font-size: .9rem;
+            font-weight: 700;
+            padding: 8px 20px;
+            border-radius: 5px;
             cursor: pointer;
             text-align: center;
-            background-color: transparent;
-            border: 1px solid white;
+            background-color: orangered;
+            border: 1px solid orangered;
         }
 
-        .deliv-form {
+        .login-form{
+            
             width: 100%;
-            height: 23em;
+            height: 20em;
             border: none;
             border-radius: .3em;
             outline: none;
-            cursor: pointer;
             display: inline-block;
             margin: 2em;
-            padding: 20px;
-            background-color: white;
-            /* opacity: ; */
+            padding: 18px;
+            background-color: rgb(7, 7, 7);
+            opacity: .9;
         }
-
-        .left-right {
-            display: flex;
-            align-items: center;
+         input{
+            font-family: inherit;
+            font-size: 100%;
+            
         }
-
-        .right {
-            padding-top: 15px;
-            flex: 2;
+        input{
+            margin: .5em;
+            padding: .4em;
+            background-color: transparent;
+            border-width: 0;
+            border-bottom: .1px solid orangered;
+            margin-bottom: 2px;
+            width: 15em; 
+            
         }
-
-        .left {
-            flex: 1;
-        }
-
         input {
             width: em;
             height: 25px;
 
         }
-
-        #currency {
-            width: fit-content;
-        }
-
-        select {
-            margin: .5em;
-            width: 100%;
-            height: 30px;
-            padding: .3em;
-            display: inline-block;
-            justify-content: first baseline;
-        }
         #lg-h2{
+            align-items: center;
             text-align: center;
             color: orangered;
             border-radius: .2em;
             font-size: 14px;
-            padding: .3em;
+            padding: .5em;
         }
 
         h2 {
             border-radius: .2em;
-            font-size: 30px;
+            font-size: 25px;
             padding: .3em;
         }
 
@@ -182,49 +186,14 @@
         .pa {
             color: #fcfafa;
         }
-
-        .continue {
-            color: white;
-            padding: .8em;
-            background-color: rgb(1, 64, 236);
-            font-size: 1rem;
-            font-weight: 500;
-            border: 0;
-            border-radius: 3px;
-            font-size: small;
-            width: 100%;
-            margin: 25px 0;
-
-        }
-
-
         h1 {
             font-size: 30px;
         }
 
-        .div-blender {
-            height: 600px;
-            background-color: black;
-            opacity: .5;
-        }
-
-        .root {
-            padding: .1em;
-            opacity: 8;
-            background-color: blue;
-            background-blend-mode: hard-light;
-        }
         .bottom-link{
             text-align: center;
         }
-        .button-n{
-            height: 2em;
-            width: 10rem;
-            border: none;
-            border-radius: 20%;
-            background-color: orangered;
-            
-        }
+        
     </style>
 </head>
 
@@ -243,7 +212,7 @@
                 <li><a href="#" class="home">About</a></li>
                 <li><a href="#" class="home">Blog</a></li>
                 <li><a href="#" class="home">Contact</a></li>
-                <input type="search" class="search"><button id="search">Search</button>
+                <input type="search" class="search" placeholder="Type to search"><button id="search">Search</button>
             </ul>
         </nav>
     </header>
@@ -263,18 +232,14 @@
                 <button class="in-btn"> Join Us</button>
             </div>
             <div class="right-container">
-                <form action="#">
-                    <h2 id="lg-h2" style="background-color: white;">LOGIN HERE</h2>
+                <form action="#" class="login-form">
+                    <h2 id="lg-h2" style="background-color: white;">LOGIN HERE</h2><br>
                     <div class="input-field">
-                        <input type="text" required>
-                        
+                        <input type="email" placeholder="Enter Your Email"><br><br>
+                        <input type="password" placeholder="Enter your password" required><br><br>
+                    <button id="button-n">Log In </button>
                     </div>
-                    <div class="input-field">
-                        <input type="password" placeholder="" required>
-                        
-                    </div>
-                    <!-- <a href="#" class="forgot-pass-link">Forgot password?</a> -->
-                    <button class="button-n">Log In </button>
+                    <br>
                     <div class="bottom-link">
                         <P style="color: aliceblue;">Don't have an account?</P>
                         <a href="#" id="signup-link" style="color: orangered;">Signup</a><SPan style="color: aliceblue;"> Here</SPan>

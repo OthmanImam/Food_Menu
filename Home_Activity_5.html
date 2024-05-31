@@ -22,41 +22,47 @@
         }
 
         header {
-            background-color: beige;
-            position: relative;
-            width: 100%;
-            top: 0;
-            left: 0;
-            padding: 0 0px;
-        }
-
-        /* nav style */
-        .navbar {
-            display: flex;
-            /* padding: 8px 0; */
-            /* align-items: center; */
-            /* max-width: 1250px; */
-            /* margin: 0 auto; */
-            /* justify-content: center; */
-            gap: 30em;
+            padding: 0%;
             
         }
-
-        .navbar .links a {
-            font-family: 'Arial Narrow', Arial, sans-serif;
-            color: black;
-            font-size: 1rem;
-            font-weight: 50;
-            text-decoration: none;
-        }
-
-        .login-btn {
-            border: none;
-            outline: 1px solid black;
-            background:transparent;
+        
+        #h2{
             color: orangered;
-            font-size: 14px;
+            padding-top: 15px;
+        }
+        .navbar{
+            display: flex;
+            gap: 22em;
+            justify-content: center;
+        }
+        .nav-ba {
+            display: flex;
+            display: inline-flex;
+            margin-block: 1em;
+        }
+        a {
+            display: inline-flex;
+            text-decoration: solid;
+            font-weight: 700;
+            color: #ffffff;
+            margin: .5em;
+            text-transform: capitalize;
+        }
+        #search{
+            border: none;
+            font-size: 12px;
+            outline: 5px solid orangered;
+            background: orangered;
+            border-radius: 3px;
+            color: #fcf9f9;
+            font-size: 16px;
             font-weight: 600;
+        }
+       
+        .search {
+            border: none;
+            background-color: transparent;
+            outline: 1px solid orangered;
             /* padding: 10px 18px; */
             border-radius: 3px;
             cursor: pointer;
@@ -67,7 +73,7 @@
             display: flex;
             gap: 10em;
             align-items: center;
-            padding: 5rem 5em;
+            padding: 15rem 5em;
 
 
         }
@@ -107,26 +113,32 @@
             padding: 20px;
             background-color: white;
             /* opacity: ; */
-            }
-        .left-right{
+        }
+
+        .left-right {
             display: flex;
             align-items: center;
         }
-        .right{
+
+        .right {
             padding-top: 15px;
             flex: 2;
         }
-        .left{
+
+        .left {
             flex: 1;
         }
-        input{
+
+        input {
             width: em;
             height: 25px;
 
         }
-        #currency{
+
+        #currency {
             width: fit-content;
         }
+
         select {
             margin: .5em;
             width: 100%;
@@ -135,10 +147,17 @@
             display: inline-block;
             justify-content: first baseline;
         }
+        #lg-h2{
+            text-align: center;
+            color: orangered;
+            border-radius: .2em;
+            font-size: 14px;
+            padding: .3em;
+        }
 
         h2 {
             border-radius: .2em;
-            font-size: 18px;
+            font-size: 30px;
             padding: .3em;
         }
 
@@ -155,14 +174,15 @@
         }
 
         .pl {
-            font-size: small;
             font-weight: 500;
             text-decoration: none;
             color: blue;
         }
-        .pa{
-            color: black;
+
+        .pa {
+            color: #fcfafa;
         }
+
         .continue {
             color: white;
             padding: .8em;
@@ -179,7 +199,7 @@
 
 
         h1 {
-            color: #fff;
+            font-size: 30px;
         }
 
         .div-blender {
@@ -187,71 +207,85 @@
             background-color: black;
             opacity: .5;
         }
-        .root{
+
+        .root {
             padding: .1em;
             opacity: 8;
             background-color: blue;
             background-blend-mode: hard-light;
         }
+        .bottom-link{
+            text-align: center;
+        }
+        .button-n{
+            height: 2em;
+            width: 10rem;
+            border: none;
+            border-radius: 20%;
+            background-color: orangered;
+            
+        }
     </style>
 </head>
 
 <body>
-    <!-- <header> -->
+    <header>
         <nav class="navbar">
-            <!-- <span class="hamburger-btn material-symbols-rounded">menu</span>
-            <a href="#" class="logo"> -->
-                <!-- <img src="images/logo.jpg" alt="logo"> -->
-                <h2 style="color: orangered;">ProRoz</h2>
-            </a>
-            <ul class="links" style="display: inline-flex;">
-                <!-- <span class="close-btn material-symbols-rounded">close</span> -->
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Contact</a></li>
-                <input type="search" class="login-btn"><button class="login-btn">Search</button>
+            <span>
+                <h2 id="h2">PraRoz</h2>
+            </span>
+            <!-- <a href="#" class="m"><h2>Roysha</h2></a> -->
+            <ul class="links" style="list-style-type: none;">
+                <li><a href="javascript.void(0)" class="home">Home</a></li>
+                <li><a href="#" class="sendmoney">Send Money</a></li>
+                <li><a href="#" class="receive">Recieve Money </a></li>
+                <li><a href="#" class="page">Page</a></li>
+                <li><a href="#" class="home">About</a></li>
+                <li><a href="#" class="home">Blog</a></li>
+                <li><a href="#" class="home">Contact</a></li>
+                <input type="search" class="search"><button id="search">Search</button>
             </ul>
-            
         </nav>
     </header>
-    
-    <!-- <main> -->
-    <div class="main-container">
-        <div class="left-container">
-            
-            <h2>Web Design & </h2>
-            <h1>Development </h1>
-            <h2>with no Charges</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas, totam vero reiciendis, voluptas
-                magni veritatis dolores sequi, neque eos pariatur in ex cupiditate obcaecati error? Nisi voluptatem
-                quidem in!</p><br>
-            <button class="in-btn"> Join Us</button>
+        <!-- header end -->
+
+        <!-- <main> -->
+        <div class="main-container">
+            <div class="left-container">
+
+                <h1 style="color: white;">Web Design & </h1>
+                <h1 style="color: orangered;">Development </h1>
+                <h1 style="color: white;">Course</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas, totam vero reiciendis,
+                    voluptas
+                    magni veritatis dolores sequi, neque eos pariatur in ex cupiditate obcaecati error? Nisi voluptatem
+                    quidem in!</p><br>
+                <button class="in-btn"> Join Us</button>
+            </div>
+            <div class="right-container">
+                <form action="#">
+                    <h2 id="lg-h2" style="background-color: white;">LOGIN HERE</h2>
+                    <div class="input-field">
+                        <input type="text" required>
+                        
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="" required>
+                        
+                    </div>
+                    <!-- <a href="#" class="forgot-pass-link">Forgot password?</a> -->
+                    <button class="button-n">Log In </button>
+                    <div class="bottom-link">
+                        <P style="color: aliceblue;">Don't have an account?</P>
+                        <a href="#" id="signup-link" style="color: orangered;">Signup</a><SPan style="color: aliceblue;"> Here</SPan>
+                        <p style="color: #fcf9f9;">Login With</p>
+                    </div>
+                </form>
+
+            </div>
         </div>
-        <div class="right-container">
-            <form action="#">
-                <h2 style="background-color: white;">LOGIN HERE</h2>
-                <div class="input-field">
-                    <input type="text" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-field">
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <!-- <a href="#" class="forgot-pass-link">Forgot password?</a> -->
-                <button class="button-n" type="submit">Log In </button>
-                <div class="bottom-link">
-                    <P style="color: aliceblue;">Don't have an account?</P>
-                    <a href="#" id="signup-link">Signup</a><SPan style="color: aliceblue;"> Here</SPan>
-                </div>
-            </form>
 
         </div>
-    </div>
-
-    </div>
 
 
 </body>

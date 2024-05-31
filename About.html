@@ -6,16 +6,29 @@
     <title>Practice 3</title>
     <link rel="icon" href="icon/icon2.png">
     <style>
-        nav{
-            padding: 03%;
-            background-color: rgb(87, 80, 117);
-            color: aliceblue;
+         header{
+            padding: 0%;
+            background-color: whitesmoke;
+            /* margin-block: 2em;
+            padding-left: 7em; */
         }
         a{
-         text-decoration: none; 
-         color: aliceblue; 
-          
+            display:inline-flex;
+            text-decoration: none;
+            color: aliceblue;
+            margin: .5em;
+            text-transform:capitalize; 
         }
+        .nav-ba{
+            display: flex;
+            justify-content: flex-end;
+            position: relative;            
+            background-color: rgb(6, 46, 33);
+            padding: .5em;
+            display: inline-flex;
+            margin-block: 1em;
+        }
+         
         .fav1{
             color: red;
         }
@@ -29,14 +42,20 @@
     </style>
 </head>
 <body>
-    <h1>Fassion for Stories</h1>
-<nav>
-    <a href="Practice.html"><button>Home</button></a> 
-    <a href="stories.com"><button>Stories</button></a>
-    <a href="Audio.com"><button>Audio</button></a>
-    <a href="books.com"><button>Buy Books</button></a>
-    <a href="Blug.com"><button>Blug</button></a>
-</nav>
+    <h1>About Us</h1>
+<header>
+    <header>
+        <nav class="nav-ba">
+            <a href="foodmenu.html">Home</a>
+            <a href="food.html">Food Gallary</a>
+            <a href="gallery.html">Image Gallary</a>
+            <a href="videos.html">Videos</a>
+            <a href="order_form.html">Order</a>
+            <a href="About.html">About Us</a>
+            <a href="Index.html" style="color: red">ACTIVITIES HOME</a>
+        </nav>
+    </header>
+    <hr>
     <br><br>
     Search: <input type="search" placeholder="Searching Keywords"><br><br>
     <h2>A Story 🖼</h2>

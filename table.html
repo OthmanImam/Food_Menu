@@ -7,16 +7,62 @@
 </head>
 <style>
   table{
-    table-layout:fixed;
-    width: 100%;
-    border: 1 solid black;
+   border-collapse: collapse;
+   width:1000px;
+   height: 400px;
+   border: 1 solid black;
+   text-align: center;
   }
+  .table-1{
+   
+   padding-top: 50px;
+   padding-left: 200px;
+   position: relative;
+  justify-content: center;
+  }
+  header{
+            padding: 0%;
+            background-color: whitesmoke;
+            /* margin-block: 2em;
+            padding-left: 7em; */
+        }
+        a{
+            display:inline-flex;
+            text-decoration: none;
+            color: aliceblue;
+            margin: .5em;
+            text-transform:capitalize; 
+        }
+        .nav-ba{
+            display: flex;
+            justify-content: flex-end;
+            position: relative;            
+            background-color: rgb(6, 46, 33);
+            padding: .5em;
+            display: inline-flex;
+            margin-block: 1em;
+            /* padding-left: 0em; 
+            padding-right: 0em;          */
+        }
+       
 </style>
 <body>
+   <header>
+      <nav class="nav-ba">
+      <div class="div-nab">
+          <a href="index.html">Home</a>
+          <a href="foodmenu.html">Activity I</a>
+          <a href="Home_Activity_5.html">Activity II</a>
+          <a href="Class_Activity_7.html">Activity III</a>
+          <a href="table.html">Activity IV</a>
+          <a href="table2.html">Activity V</a>
+      </div> 
+      </nav>
+  </header>
     <div class="table-1">
         <h2 style="text-align: center;"><i>Weekly planner</i></h2>
         <table border="1">
-            <th></th>
+            <th class="c1"></th>
             <th>Monday</th>
             <th>Tuesday</th>
             <th>Wednesday</th>
